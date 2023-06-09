@@ -4,6 +4,12 @@ body{
     place-items: center;
     background-color: hsl(234, 29%, 20%);
 }
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 .container{
     width: auto;
     background-color: white;
@@ -22,6 +28,15 @@ body{
     width: 27rem;
     margin-right: 10px;
     margin-left: 10px;
+}
+.error {
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-left: 10px;
+}
+.gap{
+    font-size: 12px;
 }
 h1{
     font-weight: 700;
@@ -58,6 +73,16 @@ button{
 }
 button:hover{
     background-color: hsl(4, 74%, 51%);
+    cursor: pointer;
+}
+/*Success message div styling*/
+.message-container{
+    /* outline: 2px red dashed; */
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 30px 50px 30px;
+    height: auto;
+    width: 30vw;
 }
 
 @media only screen and  (max-width: 600px){
@@ -70,8 +95,9 @@ button:hover{
     }
     .container {
         flex-direction: column-reverse;
-        width: 100%;
+        width: fit-content;
         border-radius: 0;
+        margin-left: 0;
         padding: 0 0 0 0;
     }
     .form-container{
@@ -89,10 +115,27 @@ button:hover{
     ul{
         vertical-align: text-bottom;
     }
-    .form{
+    input{
+        width: 63.5vw;
+    }
+    #form{
         padding-top: 20px;
     }
     button{
-        margin-top: 10px;
+        width: 93vw;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .message-container{
+        font-size: 16px;
+        width: fit-content;
+        margin-left: 0;
+        border-radius: 0;
+        padding: 30% 10px 0;
+        outline: 2px orange dashed;
+    }
+    .message-container button{
+        margin-top: 20vh;
+        margin-bottom: 30px;
     }
 }
