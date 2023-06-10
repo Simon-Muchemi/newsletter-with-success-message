@@ -61,6 +61,9 @@ input{
     margin: 10px 0 10px;
     outline: beige;
 }
+input:focus{
+    border: 1px solid hsla(0, 2%, 10%, 0.99);
+}
 button{
     padding: 10px 25px 10px 25px;
     background-color: hsl(235, 26%, 20%);
