@@ -16,6 +16,7 @@ form.addEventListener('submit', function (event){
         event.preventDefault();
    }
 });
+
 function checkEmail(email){
     const regex = new RegExp(/^[\w.-]+@[\w.-]+\.\w+$/); // in case of an error, change the regex to /^[\w\.-]+@[\w\.-]+\.\w+$/
     return regex.test(email);
