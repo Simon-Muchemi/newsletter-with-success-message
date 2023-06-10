@@ -16,8 +16,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,11 +31,17 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-- desktop
+- Desktop
+
 ![design](./assets/newsletter%20-%20desktop.png)
-- error-state
-![design](./assets/newsletter_error-state.png)
 - Mobile
+
+![design](./assets/mobile.png)
+- error-state
+
+![design](./assets/newsletter_error-state.png)
+- Mobile (succes)
+
 - ![design](./assets/success%20message%20-%20mobile.png)
 ### Links
 
