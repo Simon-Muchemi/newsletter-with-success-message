@@ -17,6 +17,7 @@ validateEmail = function (event)
 
 }
 function checkEmail(email){
-    const regex = new RegExp(/^[\w.-]+@[\w.-]+\.\w+$/); // in case of an error, change the regex to /^[\w\.-]+@[\w\.-]+\.\w+$/
+    // in case of an error, change the regex to /^[\w\.-]+@[\w\.-]+\.\w+$/
+    const regex = new RegExp(/^[\w.-]+@[\w.-]+\.\w+$/);
     return regex.test(email);
 }
