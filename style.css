@@ -135,7 +135,6 @@ button:hover{
         margin-left: 0;
         border-radius: 0;
         padding: 30% 10px 0;
-        outline: 2px orange dashed;
     }
     .message-container button{
         margin-top: 20vh;
