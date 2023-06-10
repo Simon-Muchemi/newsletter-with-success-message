@@ -19,11 +19,11 @@
             <li><p>Measuring to ensure updates are a success</p></li>
             <li><p>And much more!</p></li>
         </ul>
-        <form id="form">
+        <form id="form" onsubmit="validateEmail(event)">
             <label for="email" class="email">Email Address</label>
             <span id="error-msg" class="error">Valid email required</span><br>
             <input name="email" id="email" placeholder="email@company.com"><br>
-            <button class="submit-btn" form="form" value="submit">Subscribe to monthly newsletter</button>
+            <button class="submit-btn" form="form" value="submit">Submit to monthly newsletters</button>
         </form>
        
     </div>
