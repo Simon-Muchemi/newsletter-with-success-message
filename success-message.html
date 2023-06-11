@@ -8,29 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
 </head>
 <body>
 <div class="message-container">
-    <img src="assets/images/icon-success.svg" alt="">
+    <img src="assets/images/icon-success.svg" alt="success icon">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+    <p>A confirmation email has been sent to <span id="display-email">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.
     </p>
     <button>Dismiss message</button>
 </div>
-<!--<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/Simon-Muchemi/" target="_blank">Simon Muchemi</a>.
-</div>-->
+<script>
+    const emailAddr = localStorage.getItem('email-address');
+    const email = document.getElementById('display-email')
+    email.textContent = emailAddr;
+    email.style.fontWeight = 'bold';
+</script>
 </body>
 </html>
-<!-- Success message start -->
-<!--
-Thanks for subscribing!
-
-A confirmation email has been sent to ash@loremcompany.com.
-Please open it and click the button inside to confirm your subscription.
-
-Dismiss message-->
-<!-- Success message end -->

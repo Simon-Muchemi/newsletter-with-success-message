@@ -1,10 +1,13 @@
 const emailInput = document.getElementById('email');
 const errorMsg = document.getElementById('error-msg');
 const input = document.querySelector('input');
+
 validateEmail = function (event)
 {
     event.preventDefault();
     let email = emailInput.value;
+    console.log(typeof(email));
+    localStorage.setItem('email-address', email);
 
     if (checkEmail(email)){
         window.location.href = 'success-message.html';
@@ -15,7 +18,6 @@ validateEmail = function (event)
         errorMsg.style.display = 'inline';
         input.style.borderColor = 'red';
     }
-
 }
 function checkEmail(email){
     // in case of an error, change the regex to /^[\w\.-]+@[\w\.-]+\.\w+$/
